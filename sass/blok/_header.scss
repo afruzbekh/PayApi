@@ -1,0 +1,260 @@
+.nav {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    column-gap: 64px;
+    &__logo {
+        max-width: 133.9px;
+        max-height: 36.77px;
+    }
+    @include for-phone-only {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @include for-phone-only {
+        display: none;
+    }
+    &__bar {
+        display: flex;
+        column-gap: 40px;
+        align-items: center;
+        li {
+            font: {
+                family: $primary-font-family;
+                weight: 700;
+                size: 15px;
+            }
+            line-height: 18px;
+            mix-blend-mode: normal;
+            opacity: 0.7;
+            a {
+                color: $main-font-color;
+                transition: 0.5s ease;
+            }
+            a:hover {
+                color: #6C8294;
+                border-bottom: 1px solid blue;
+            }
+        }
+    }
+    &__button {
+        @include for-phone-only {
+            display: none;
+        }
+        border: none;
+        background: $main-button-color;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        border-radius: 24px;
+        font: {
+            family: $primary-font-family;
+            weight: 700;
+            size: 15px;
+        }
+        line-height: 18px;
+        letter-spacing: -0.115385px;
+        color: $main-bg-color;
+        padding: 16px 24.5px 14px 26.5px;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    &__button:hover {
+        background: #cb1d5f;
+    }
+}
+
+.menu__hamburger-btn {
+    display: none;
+    @include for-tablet-portrait-up {
+        display: none;
+    }
+    @include for-phone-only {
+        display: block;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include for-tablet-portrait-up {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    @include for-phone-only {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+    }
+    &__left {
+        &__h1 {
+            max-width: 546px;
+            font-family: $secondry-font-family;
+            font: {
+                weight: 400;
+                size: 72px;
+            }
+            line-height: 72px;
+            letter-spacing: -0.553846px;
+            color: $main-font-color;
+            @include for-tablet-portrait-up {
+                max-width: 573px;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 56px;
+                text-align: center;
+                letter-spacing: -0.369231px;
+                color: $main-font-color;
+            }
+            @include for-phone-only {
+                margin: 0 auto;
+                max-width: 327px;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 36px;
+                text-align: center;
+                letter-spacing: -0.246154px;
+                color: $main-font-color;
+            }
+        }
+        &__form {
+            margin-top: 21px;
+            margin-bottom: 16px;
+            display: flex;
+            row-gap: -20px;
+            position: relative;
+            @include for-phone-only {
+                flex-direction: column;
+                margin: 0 auto;
+                margin-top: 24px;
+            }
+            input {
+                width: 100%;
+                padding: 16px 276px 14px 27px;
+                background: $button__font-color;
+                box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+                border-radius: 24px;
+                border: none;
+                outline: none;
+                @include for-tablet-portrait-up {
+                    left: 0;
+                    right: 0;
+                }
+                @include for-phone-only {
+                    padding: 16px 112px 14px 27px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    margin-bottom: 16px;
+                }
+            }
+            button {
+                z-index: 2;
+                top: 0;
+                right: 29px;
+                position: absolute;
+                @include for-phone-only {
+                    position: relative;
+                    padding: 16px 78px 14px 88px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    margin-bottom: 38px;
+                    left: 0%;
+                }
+            }
+        }
+        &__text {
+            font-family: $primary-font-family;
+            font: {
+                weight: 400;
+                size: 15px;
+            }
+            line-height: 18px;
+            color: #6C8294;
+            a {
+                color: $main-font-color;
+                font: {
+                    weight: 700;
+                }
+            }
+            @include for-tablet-portrait-up {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            @include for-phone-only {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    &__right img {
+        width: 327px;
+        @include for-tablet-portrait-up {}
+        @include for-phone-only {
+            margin-left: 15px;
+            max-width: 283px;
+        }
+    }
+    // .bg-circle {
+    //     clip-path: circle(50% at 50% 50%);
+    //     background: #36536B;
+    //     width: 780px;
+    //     height: 780px;
+    //     mix-blend-mode: normal;
+    //     opacity: 0.15;
+    //     z-index: -1px;
+    //     top: -326px;
+    //     right: -419px;
+    //     display: none;
+    //     @include for-tablet-portrait-up {
+    //         display: block;
+    //         position: absolute;
+    //         z-index: 0;
+    //         top: -559px;
+    //         width: 775px;
+    //         left: -31px;
+    //     }
+    //     @include for-phone-only {
+    //         display: block;
+    //         position: absolute;
+    //         z-index: 0;
+    //         width: 780px;
+    //         top: -565px;
+    //         left: -138px;
+    //     }
+    // }
+}
+
+// .phone-tablet img {
+//     display: none;
+//     @include for-tablet-portrait-up {
+//         display: block;
+//         max-width: 159px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+//     @include for-phone-only {
+//         display: block;
+//         max-width: 127px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }

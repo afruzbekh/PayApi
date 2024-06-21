@@ -1,0 +1,23 @@
+@import './fonts';
+@import './blok/veriables';
+@import './blok/mixin';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    background: $main-bg-color;
+    padding-bottom: 75.57px;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@import './blok/blog';

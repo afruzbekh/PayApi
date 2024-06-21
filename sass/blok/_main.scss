@@ -1,0 +1,397 @@
+.partners {
+    background: $secondry-bg-color;
+    padding: 100px 0 100px 0;
+    @include for-tablet-portrait-up {
+        padding: 88px 0 88px 0;
+    }
+    &__intro {
+        display: flex;
+        column-gap: 131px;
+        @include for-tablet-portrait-up {
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        &__aboutus {
+            &__h2 {
+                max-width: 445px;
+                margin-bottom: 24px;
+                font-family: $secondry-font-family;
+                font: {
+                    weight: 400;
+                    size: 48px;
+                }
+                line-height: 56px;
+                letter-spacing: -0.369231px;
+                color: $button__font-color;
+                @include for-tablet-portrait-up {
+                    max-width: 457px;
+                    font: {
+                        weight: 400;
+                        size: 48px;
+                    }
+                    line-height: 56px;
+                    text-align: center;
+                    letter-spacing: -0.369231px;
+                }
+                @include for-phone-only {
+                    max-width: 327px;
+                    margin-top: 56px;
+                    font: {
+                        weight: 400;
+                        size: 32px;
+                    }
+                    line-height: 36px;
+                    margin: 0 auto;
+                    letter-spacing: -0.246154px;
+                }
+            }
+            &__text {
+                max-width: 445px;
+                margin-bottom: 32px;
+                font-family: $primary-font-family;
+                font: {
+                    weight: 400;
+                    size: 15px;
+                }
+                line-height: 28px;
+                color: $button__font-color;
+                mix-blend-mode: normal;
+                opacity: 0.7;
+                @include for-tablet-portrait-up {
+                    margin-top: 16px;
+                    margin-bottom: 60px;
+                    max-width: 456px;
+                    font: {
+                        weight: 400;
+                        size: 15px;
+                    }
+                    line-height: 28px;
+                    text-align: center;
+                    color: #FBFCFE;
+                    mix-blend-mode: normal;
+                    opacity: 0.7;
+                }
+            }
+            &__btn {
+                background: transparent;
+                cursor: pointer;
+                padding: 16px 32px 14px 32px;
+                border: 1px solid $button__font-color;
+                border-radius: 24px;
+                font-family: $primary-font-family;
+                font: {
+                    weight: 700;
+                    size: 15px;
+                }
+                line-height: 18px;
+                text-align: center;
+                letter-spacing: -0.115385px;
+                color: #FBFCFE;
+                transition: 0.5s ease;
+                @include for-tablet-portrait-up {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                }
+            }
+            &__btn:hover {
+                background: $button__font-color;
+                color: $secondry-bg-color;
+            }
+        }
+        &__partnerslogos {
+            @include for-tablet-portrait-up {
+                margin-bottom: 64px;
+                row-gap: 54px;
+            }
+            @include for-phone-only {
+                display: grid;
+                grid-column-gap: 62px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                align-items: center;
+            }
+            display: grid;
+            grid-column-gap: 62px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            align-items: center;
+        }
+        .partnerslogos__googlelogo {
+            margin: 0 auto;
+            @include for-tablet-portrait-up {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.howtouse {
+    background: $main-bg-color;
+    padding: 150px 0 100px 0;
+    @include for-tablet-portrait-up {
+        padding: 100px 0 100px 0;
+    }
+}
+
+.howtouse-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 125px;
+    padding-bottom: 150px;
+    @include for-tablet-portrait-up {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    }
+    &__left img {
+        max-width: 569px;
+        margin-left: -86px;
+        @include for-tablet-portrait-up {
+            margin: 0;
+        }
+        @include for-phone-only {
+            max-width: 380px;
+            margin-left: 36px;
+        }
+    }
+    &__right {
+        &__h2 {
+            max-width: 445px;
+            margin-bottom: 24px;
+            font-family: $secondry-font-family;
+            font: {
+                weight: 400;
+                size: 48px;
+            }
+            line-height: 56px;
+            letter-spacing: -0.369231px;
+            color: $main-font-color;
+            @include for-tablet-portrait-up {
+                margin: 0 auto;
+            }
+        }
+        &__text {
+            max-width: 445px;
+            font-family: $primary-font-family;
+            font: {
+                weight: 400;
+                size: 15px;
+            }
+            line-height: 28px;
+            color: $thirdly-font-color;
+            @include for-tablet-portrait-up {
+                max-width: 573px;
+                text-align: center;
+                margin-top: 24px;
+            }
+            @include for-phone-only {
+                max-width: 328px;
+                margin: 0 auto;
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+.howtouse-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 95px;
+    padding-bottom: 146px;
+    @include for-tablet-portrait-up {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    }
+    &__left__h2 {
+        max-width: 445px;
+        margin-bottom: 24px;
+        font-family: $secondry-font-family;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+        color: $main-font-color;
+        @include for-tablet-portrait-up {
+            max-width: 573px;
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+    }
+    &__left__text {
+        font-family: $primary-font-family;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        color: $thirdly-font-color;
+        @include for-tablet-portrait-up {
+            max-width: 573px;
+        }
+    }
+    &__right img {
+        max-width: 566px;
+        @include for-tablet-portrait-up {
+            max-width: 363px;
+        }
+    }
+}
+
+.info {
+    background: $main-bg-color;
+    padding: 0 0 96px 0;
+    @include for-tablet-portrait-up {
+        padding-bottom: 100px;
+    }
+    @include for-phone-only {
+        padding-bottom: 80px;
+    }
+}
+
+.info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    @include for-tablet-portrait-up {
+        column-gap: 10px;
+    }
+    @include for-phone-only {
+        flex-direction: column;
+        row-gap: 48px;
+    }
+    &__box1 {
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        &__img {
+            max-width: 106px;
+            max-height: 106px;
+        }
+        &__h3 {
+            max-width: 350px;
+            margin: 32px 0 16px 0;
+            font-family: $primary-font-family;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: -0.138462px;
+            color: $main-font-color;
+        }
+        &__text {
+            max-width: 350px;
+            max-height: 100px;
+            font-family: $primary-font-family;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: -0.115385px;
+            color: $thirdly-font-color;
+        }
+    }
+}
+
+.main__lastpart {
+    position: relative;
+    padding: 100px 0 100px 0;
+    display: flex;
+    @include for-tablet-portrait-up {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        row-gap: 40px;
+    }
+    &__h2 {
+        max-width: 445px;
+        font-family: $secondry-font-family;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+        color: $main-font-color;
+    }
+    &__form {
+        @include for-tablet-portrait-up {
+            position: relative;
+        }
+        @include for-phone-only {}
+        input {
+            position: absolute;
+            z-index: 0;
+            padding: 16px 276px 14px 27px;
+            background: $button__font-color;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            border-radius: 24px;
+            border: none;
+            outline: none;
+            right: 0;
+            @include for-tablet-portrait-up {
+                position: static;
+                z-index: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+            }
+            @include for-phone-only {
+                position: relative;
+                padding: 16px 136px 14px 27px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                margin-bottom: 16px;
+            }
+        }
+        .lastbtn {
+            position: absolute;
+            right: 0;
+            display: flex;
+            z-index: 2;
+            border: none;
+            background: $main-button-color;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            border-radius: 24px;
+            font: {
+                family: $primary-font-family;
+                weight: 700;
+                size: 15px;
+            }
+            line-height: 18px;
+            letter-spacing: -0.115385px;
+            color: $main-bg-color;
+            padding: 16px 24.5px 14px 26.5px;
+            cursor: pointer;
+            transition: 0.5s ease;
+            @include for-tablet-portrait-up {
+                position: absolute;
+                top: 0;
+            }
+            @include for-phone-only {
+                margin: 0 auto;
+                position: relative;
+                width: 327px;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+        .lastbtn:hover {
+            background: #cb1d5f;
+        }
+    }
+}
